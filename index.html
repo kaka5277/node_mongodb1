@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MongoDB App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MongoDB App</h1>
+
+    <!-- 查询数据表格 -->
+    <h2>查询数据</h2>
+    <button id="queryButton">查询所有数据</button>
+    <table id="queryResult" border="1">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </table>
+
+    <!-- 插入数据表单 -->
+    <h2>插入数据</h2>
+    <form id="insertForm">
+      <input type="text" id="name" placeholder="Name" />
+      <!-- <input type="number" id="age" placeholder="Age" /> -->
+      <input type="text" id="age" placeholder="Age" />
+      <button type="submit">插入数据</button>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
